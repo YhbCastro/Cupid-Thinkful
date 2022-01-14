@@ -1,4 +1,11 @@
 /* -------  General Styles ------- */
+main {
+  padding: 20px 0;
+}
+
+section {
+  margin-bottom: 100px;
+}
 
 body {
   font-family: "Lato", sans-serif;
@@ -8,7 +15,7 @@ body {
 h2 {
   font-size: 26px;
   font-weight: 400;
-  margin: 0 10px 15px 10px;
+  margin: 0 0 15px 10px;
   text-align: center;
 }
 
@@ -23,12 +30,13 @@ p {
 }
 
 section {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 section.alternate-background {
   background-color: #a35766;
   color: #ecdbc9;
+  margin-bottom: 0;
 }
 
 main img {
@@ -56,7 +64,8 @@ main img {
 .row {
   display: flex;
   flex-flow: row;
-  justify-content: space-between
+  justify-content: center;
+  align-content: space-evenly;
 }
 
 /* -------  Navigation ------- */
@@ -126,12 +135,13 @@ form button {
 
 footer {
   background-color: #83092e;
+  margin-top: -20px;
 }
 
 footer p {
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 0 10px;
 }
 
 /* -------  Media Query ------- */
@@ -146,20 +156,12 @@ footer p {
     text-align: left;
   }
 
-  #join img {
-    height: 450px;
-  }
-
-  #download img {
-    height: 450px;
-  }
-
   .group {
     align-items: center;
     flex-flow: row wrap;
   }
 
-  #blog .group img {
+  .group img {
     height: 300px;
   }
 }
