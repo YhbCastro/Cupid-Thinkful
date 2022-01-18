@@ -1,12 +1,4 @@
 /* -------  General Styles ------- */
-main {
-  padding: 20px 0;
-}
-
-section {
-  margin-bottom: 100px;
-}
-
 body {
   font-family: "Lato", sans-serif;
   color: #6b1a22;
@@ -15,11 +7,11 @@ body {
 h2 {
   font-size: 26px;
   font-weight: 400;
-  margin: 0 0 15px 10px;
+  margin: 0 10px 15px 10px;
   text-align: center;
 }
 
-h3 {
+h3 { 
   font-size: 18px;
   font-weight: 500;
 }
@@ -30,20 +22,18 @@ p {
 }
 
 section {
-  padding: 0 20px;
+  padding: 20px;
 }
 
 section.alternate-background {
   background-color: #a35766;
   color: #ecdbc9;
-  margin-bottom: 0;
 }
 
-main img {
-  width: auto;
-  height: 215px;
-  padding: 10px;
+img {
+  width: 100%;
 }
+
 
 /* ---  Groups & Items --- */
 
@@ -61,13 +51,6 @@ main img {
   flex: 2;
 }
 
-.row {
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-content: space-evenly;
-}
-
 /* -------  Navigation ------- */
 
 header {
@@ -78,24 +61,20 @@ header {
 
 .logo {
   font-family: "Tangerine", cursive;
-  font-size: 72px;
+  font-size: 90px;
   color: #ecdbc9;
-}
-
-header nav ul {
-  display: flex;
-  list-style-type: none;
-  padding-bottom: 10px;
 }
 
 header nav ul li {
   list-style-type: none;
+  font-size: 20px;
 }
 
 header nav ul li a {
   color: #ecdbc9;
   text-decoration: none;
   padding: 0 20px 0 0;
+
 }
 
 header nav ul li a:hover {
@@ -103,12 +82,18 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
+#menu {
+  display: flex;
+  justify-content: center;
+}
+#menu li {
+  margin-bottom: 20px;
+}
+
 /* -------  Join Form ------- */
 form {
   border: 2px solid #6b1a22;
   padding: 10px;
-  display: flex;
-  flex-flow: column nowrap;
 }
 
 form label {
@@ -117,7 +102,6 @@ form label {
 
 form select,
 form input {
-  justify-self: flex-end;
   margin-bottom: 20px;
   width: 180px;
 }
@@ -131,37 +115,37 @@ form button {
   width: 100%;
 }
 
+form div {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* -------  Footer ------- */
 
 footer {
   background-color: #83092e;
-  margin-top: -20px;
 }
 
 footer p {
   color: #fff;
   text-align: center;
-  padding: 0 10px;
+  padding: 20px;
 }
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 480px) {
-  header .group {
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
     justify-content: space-between;
-  }
-
-  .logo {
-    font-size: 48px;
-    text-align: left;
-  }
-
-  .group {
     align-items: center;
-    flex-flow: row wrap;
   }
-
-  .group img {
-    height: 300px;
+  .logo {
+    font-size: 72px;
+  }
+  .group {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
