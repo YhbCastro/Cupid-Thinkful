@@ -12,8 +12,9 @@ h2 {
 }
 
 h3 { 
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 500;
+  align-items: center;
 }
 
 p {
@@ -49,6 +50,10 @@ img {
 
 .item-double {
   flex: 2;
+}
+
+.center {
+  text-align: center;
 }
 
 /* -------  Navigation ------- */
