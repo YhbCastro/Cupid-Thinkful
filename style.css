@@ -47,13 +47,14 @@ img {
 }
 
 .item {
-  flex: 2;
+  flex: 1;
   margin: 10px;
+ 
 }
 
 .item-double {
   flex: 2;
-  margin: 30px;
+  margin: 5px;
 }
 
 .center {
