@@ -71,7 +71,7 @@ header {
 
 .logo {
   font-family: "Tangerine", cursive;
-  font-size: 90px;
+  font-size: 70px;
   color: #ecdbc9;
 }
 
@@ -154,9 +154,11 @@ footer p {
    header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
- 
+
   .group {
     flex-direction: row;
     align-items: center;
