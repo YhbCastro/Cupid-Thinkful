@@ -48,13 +48,15 @@ img {
 
 .item {
   flex: 1;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
  
 }
 
 .item-double {
   flex: 2;
-  margin: 5px;
+  margin: 10px;
+  text-align: vertically centered;
 }
 
 .center {
